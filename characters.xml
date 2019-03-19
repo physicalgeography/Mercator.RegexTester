@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<characters>
+  <character name="\">转义字符，将一个具有特殊功能的字符转义为一个普通字符，或反过来</character>
+  <character name="^">匹配输入字符串的开始位置</character>
+  <character name="$">匹配输入字符串的结束位置</character>
+  <character name="*">匹配前面的零次或多次的子表达式</character>
+  <character name="+">匹配前面的一次或多次的子表达式</character>
+  <character name="?">匹配前面的零次或一次的子表达式</character>
+  <character name="{n}">n是一个非负整数，匹配前面的n次子表达式</character>
+  <character name="{n,}">n是一个非负整数，至少匹配前面的n次子表达式</character>
+  <character name="{n,m}">m和n均为非负整数，其中n&lt;=m，最少匹配n次且最多匹配m次</character>
+  <character name="?">当该字符紧跟在其他限制符（*，+，?，{n}，{n,}，{n，m}）后面时，匹配模式尽可能少的匹配所搜索的字符串</character>
+  <character name=".">匹配除“\n”之外的任何单个字符</character>
+  <character name="(pattern)">匹配pattern并获取这一匹配</character>
+  <character name="(?:pattern)">匹配pattern但不获取匹配结果</character>
+  <character name="(?=pattern)">正向预查，在任何匹配pattern的字符串开始处匹配查找字符串</character>
+  <character name="(?!pattern)">负向预查，在任何不匹配pattern的字符串开始处匹配查找字符串</character>
+  <character name="x|y">匹配x或y。例如，‘z|food’能匹配“z”或“food”。‘(z|f)ood’则匹配“zood”或“food”</character>
+  <character name="[xyz]">字符集合。匹配所包含的任意一个字符。例如，‘[abc]’可以匹配“plain”中的‘a’</character>
+  <character name="[^xyz]">负值字符集合。匹配未包含的任意字符。例如，‘[^abc]’可以匹配“plain”中的‘p’</character>
+  <character name="[a-z]">匹配指定范围内的任意字符。例如，‘[a-z]’可以匹配'a'到'z'范围内的任意小写字母字符</character>
+  <character name="[^a-z]">匹配不在指定范围内的任意字符。例如，‘[^a-z]’可以匹配不在‘a’～‘z’'内的任意字符</character>
+  <character name="\b">匹配一个单词边界，指单词和空格间的位置</character>
+  <character name="\B">匹配非单词边界</character>
+  <character name="\d">匹配一个数字字符，等价于[0-9]</character>
+  <character name="\D">匹配一个非数字字符，等价于[^0-9]</character>
+  <character name="\f">匹配一个换页符</character>
+  <character name="\n">匹配一个换行符</character>
+  <character name="\r">匹配一个回车符</character>
+  <character name="\s">匹配任何空白字符，包括空格、制表符、换页符等</character>
+  <character name="\S">匹配任何非空白字符</character>
+  <character name="\t">匹配一个制表符</character>
+  <character name="\v">匹配一个垂直制表符。等价于\x0b和\cK</character>
+  <character name="\w">匹配包括下划线的任何单词字符。等价于‘'[A-Za-z0-9_]’</character>
+  <character name="\W">匹配任何非单词字符。等价于‘[^A-Za-z0-9_]’</character>
+</characters>
